@@ -3,9 +3,8 @@
         .config(['$sceDelegateProvider', function ($sceDelegateProvider) {
             $sceDelegateProvider.resourceUrlWhitelist(['**']);
         }])
-        .component('categoryList', {
-            //category.template.html
-            templateUrl: 'http://172.23.134.19:8082',
+        .component('categoryList', {      
+            templateUrl: 'src/Category/menu.template.html',
             bindings: {
                 items: '<',
             }
