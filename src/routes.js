@@ -1,9 +1,7 @@
 (function () {
     angular.module('MenuApp')
         .config(RoutesConfig)
-        .config(['$sceDelegateProvider', function ($sceDelegateProvider) {
-            $sceDelegateProvider.resourceUrlWhitelist(['**']);
-        }]);
+
     RoutesConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
     function RoutesConfig($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise('/');
